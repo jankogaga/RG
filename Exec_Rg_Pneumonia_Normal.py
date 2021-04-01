@@ -1,14 +1,10 @@
-!gdown --id 1580YcFpDL1SxEoPNtnF8ibGKH76oCWaY
-%mv Rg-export.pkl export.pkl
-!pip install fastai --upgrade
-
 from ipywidgets import *
 from fastai.data.all import *
 from fastai.vision.all import *
 from fastai.vision.widgets import *
  
 btn_upload = widgets.FileUpload()
-learn_inf = load_learner('export.pkl')
+learn_inf = load_learner('Rg-export.pkl')
 out_pl = widgets.Output()
 lbl_pred = widgets.Label()
  
